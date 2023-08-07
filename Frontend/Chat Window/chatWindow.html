@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Window</title>
+    <link rel="stylesheet" href="./chatWindow.css">
+    
+
+</head>
+<body>
+    <!-- Below is for letting the user choose the group or create their own group in which they want to chat-->
+    <div id="wrapper">
+        
+        <h2>To start chat choose your group</h2>
+        
+        <div id="groups">
+            <!-- <button class="groupNameButton">Group 1</button>
+            <button class="groupNameButton">Group 2</button>
+            <button class="groupNameButton">Group 3</button>
+            <button class="groupNameButton">Group 4</button> -->
+        </div>
+        
+        <div>
+            <button class="createGroupButton" onclick="createNewGroup()">Create new group</button>
+        </div>
+        
+    </div>
+
+    <!-- Below is for chat window in which you will chat -->
+    <div id="chatWindow">
+        <h1>Group Chat App</h1>
+        
+        <div id="chatbox"></div>
+        
+        <form name="message" onsubmit="addChat(event)">
+        <input name="usermsg" type="text" id="usermsg" placeholder="Enter Your Message Here....."/>
+        <button id="submitmsg">Send</button>
+        </form>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>  
+    <script src="./chatWindow.js"></script>    
+</body>
+</html>
