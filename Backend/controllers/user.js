@@ -267,12 +267,6 @@ async function createRecordInJunctionTable(req , res) {
 
     
 
-
-
-
-
-
-
 module.exports = {
     userSignUp,
     userLogin,
